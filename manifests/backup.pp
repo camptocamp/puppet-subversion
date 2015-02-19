@@ -30,7 +30,7 @@ class subversion::backup (
   }
 
   file { '/usr/local/bin/subversion-backup.sh':
-    ensure  => present,
+    ensure  => file,
     owner   => root,
     group   => root,
     mode    => '0755',
