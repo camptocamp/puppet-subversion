@@ -9,9 +9,9 @@ class subversion::base {
   }
 
   augeas::lens {'subversion':
-    ensure      => present,
-    lens_source => 'puppet:///modules/subversion/subversion.aug',
-    stock_since => '1.0.0',
+    ensure       => present,
+    lens_content => file('subversion/subversion.aug'),
+    stock_since  => '1.0.0',
   }
 
   $changes = "${::operatingsystem}${::operatingsystemmajrelease}" ? {
