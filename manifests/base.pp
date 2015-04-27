@@ -14,7 +14,12 @@ class subversion::base {
     stock_since  => '1.0.0',
   }
 
-  $changes = "${::operatingsystem}${::operatingsystemmajrelease}" ? {
+  $osrelease = $::osfamily ? {
+    'Debian' => $::lsbmajdistrelease,
+    'RedHat' => $::operatingsystemmajrelease,
+  }
+
+  $changes = "${::operatingsystem}${osrelease}" ? {
     default                       => 'set auth/store-auth-creds no',
     /^(RedHat5|Debian5|Debian6)$/ => 'set auth/store-password no',
   }
