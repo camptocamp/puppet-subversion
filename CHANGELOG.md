@@ -1,3 +1,7 @@
+## 2015-05-12 - Release 0.2.1
+
+Don't pin beaker
+
 ## 2015-04-27 - Release 0.2.0
 
 - Ubuntu support
