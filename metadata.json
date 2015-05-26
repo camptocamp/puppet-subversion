@@ -1,6 +1,6 @@
 {
   "name": "camptocamp-subversion",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "author": "Camptocamp",
   "summary": "Puppet Subversion module",
   "license": "Apache-2.0",
