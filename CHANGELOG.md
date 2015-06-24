@@ -1,3 +1,7 @@
+## 2015-06-24 - Release 0.2.7
+
+Update forge password
+
 ## 2015-05-28 - Release 0.2.6
 
 Add beaker_spec_helper to Gemfile
