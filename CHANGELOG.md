@@ -1,3 +1,7 @@
+## 2015-06-26 - Release 0.2.8
+
+Fix strict_variables activation with rspec-puppet 2.2
+
 ## 2015-06-24 - Release 0.2.7
 
 Update forge password
