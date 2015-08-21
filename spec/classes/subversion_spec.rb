@@ -4,7 +4,8 @@ describe 'subversion' do
   on_supported_os.each do |os, facts|
     context "on #{os}" do
       let(:facts) { facts.merge({
-        :augeasversion => '1.3.0'
+        :augeasversion => '1.3.0',
+        :puppetversion => Puppet.version,
       }) }
       let(:pre_condition) { 'include ::augeas' }
 
